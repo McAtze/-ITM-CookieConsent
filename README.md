@@ -1,9 +1,14 @@
 # -ITM- Cookie Consent
 ### An Xenforo add-on for the Cookie Consent by Insites
 
-With this little add-on you be able to insert and adjust the ["Cookie Consent"] (https://github.com/insites/cookieconsent/) by Insites into your Xenforo Forum.
-No more template edits or deletions after upgrade processes.
+With this little add-on you be able to insert and adjust the ["Cookie Consent"] (https://github.com/insites/cookieconsent/) by Insites into your Xenforo Forum. No more template edits or deletions after upgrade processes.
 
-Just take a look at the screenshots.
+Just take a look at the screenshots. If you wanna thank me for this add-on just [PayPal.Me] (https://www.paypal.me/itmaku) ..
 
-If you wanna thank me for this add-on just [PayPal.Me] (https://www.paypal.me/itmaku) ..
+### Documentation 
+
+See the [full documentation] (https://cookieconsent.insites.com/documentation/).
+
+### License
+
+Code released under the [MIT licence] (http://opensource.org/licenses/MIT).
