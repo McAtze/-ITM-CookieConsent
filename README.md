@@ -7,7 +7,7 @@ If you wanna thank me for this add-on just [PayPal.Me] (https://www.paypal.me/it
 
 ### Screenshots
 
-![Options #1] (https://maxcdn.it-maku.com/git/cc/options_#1.png)
+![Options] (https://maxcdn.it-maku.com/git/cc/options.png)
 ![Top Classic] (https://maxcdn.it-maku.com/git/cc/top_classic.png)
 ![Top (Pushdown) Classic] (https://maxcdn.it-maku.com/git/cc/top_pushdown_classic.png)
 ![Bottom Classic] (https://maxcdn.it-maku.com/git/cc/bottom_classic.png)
