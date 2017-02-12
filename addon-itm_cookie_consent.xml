@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="itm_cookie_consent" title="[ITM] Cookie Consent by Insites" version_string="1.0.0" version_id="100100" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="itm_cookie_consent" title="[ITM] Cookie Consent by Insites" version_string="1.0.1" version_id="100101" url="https://www.it-maku.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
   <admin_templates>
+    <template title="itm_cc_option_donate"><![CDATA[<xen:controlunit label="{$preparedOption.title}" hint="{$preparedOption.hint}">
+	<xen:explain>{xen:raw $preparedOption.explain}</xen:explain>
+	<xen:html>
+		<a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7AK7TCU5JS4TY"><img src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal." title="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal."></a>
+		<a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7TKCNB59HAK48"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal - The safer, easier way to pay online!" title="PayPal - The safer, easier way to pay online!"></a>
+	</xen:html>
+</xen:controlunit>]]></template>
+    <template title="itm_cc_option_message"><![CDATA[<xen:checkboxunit label="">
+	<xen:option name="{$fieldPrefix}[{$preparedOption.option_id}][enabled]" label="{$preparedOption.title}" selected="{$preparedOption.option_value.enabled}">
+		<xen:textbox name="{$fieldPrefix}[{$preparedOption.option_id}][ccMessage]" value="{$preparedOption.option_value.ccMessage}" rows="2" inputclass="Elastic" />
+	</xen:option>	
+	
+	<xen:explain>{xen:raw $preparedOption.explain}</xen:explain>
+	<xen:html>
+		<input type="hidden" name="{$listedFieldName}" value="{$preparedOption.option_id}" />
+		{xen:raw $editLink}
+	</xen:html>
+
+</xen:checkboxunit>]]></template>
     <template title="itm_cc_option_palette"><![CDATA[<xen:controlunit label="{$preparedOption.title}" hint="{$preparedOption.hint}">
 	<xen:explain>{xen:raw $preparedOption.explain}</xen:explain>
 	<xen:html>
@@ -48,10 +67,11 @@ wire={xen:phrase itm_cc_layout_wire}</edit_format_params>
       <sub_options></sub_options>
       <relation group_id="itm_cookie_consent" display_order="12"/>
     </option>
-    <option option_id="itm_cc_message" edit_format="textbox" data_type="string" can_backup="1">
-      <default_value>This website uses cookies to ensure you get the best experience on our website.</default_value>
-      <edit_format_params>rows=3</edit_format_params>
-      <sub_options></sub_options>
+    <option option_id="itm_cc_message" edit_format="template" data_type="array" can_backup="1">
+      <default_value>a:0:{}</default_value>
+      <edit_format_params>itm_cc_option_message</edit_format_params>
+      <sub_options>enabled
+ccMessage</sub_options>
       <relation group_id="itm_cookie_consent" display_order="130"/>
     </option>
     <option option_id="itm_cc_palette" edit_format="template" data_type="array" can_backup="1">
@@ -85,9 +105,9 @@ bottom-right={xen:phrase itm_cc_pos_float_right}</edit_format_params>
       <sub_options></sub_options>
       <relation group_id="itm_cookie_consent" display_order="11"/>
     </option>
-    <option option_id="itm_cc_support" edit_format="onoff" data_type="string" can_backup="1">
+    <option option_id="itm_cc_support" edit_format="template" data_type="string" can_backup="1">
       <default_value></default_value>
-      <edit_format_params></edit_format_params>
+      <edit_format_params>itm_cc_option_donate</edit_format_params>
       <sub_options></sub_options>
       <relation group_id="itm_cookie_consent" display_order="200"/>
     </option>
@@ -119,8 +139,8 @@ bottom-right={xen:phrase itm_cc_pos_float_right}</edit_format_params>
     <phrase title="option_itm_cc_dismiss_explain" version_id="100100" version_string="1.0.0"><![CDATA[Enter your own text for the dismiss button.]]></phrase>
     <phrase title="option_itm_cc_layout" version_id="100100" version_string="1.0.0"><![CDATA[Cookie Consent Layout]]></phrase>
     <phrase title="option_itm_cc_layout_explain" version_id="100100" version_string="1.0.0"><![CDATA[Choose the layout of your cookie consent banner. You can check out some <a href="https://cookieconsent.insites.com/demos/" target="_target">Demos</a>.]]></phrase>
-    <phrase title="option_itm_cc_message" version_id="100100" version_string="1.0.0"><![CDATA[Cookie Consent Message]]></phrase>
-    <phrase title="option_itm_cc_message_explain" version_id="100100" version_string="1.0.0"><![CDATA[Enter your own message for the cookie consent banner.]]></phrase>
+    <phrase title="option_itm_cc_message" version_id="100100" version_string="1.0.0"><![CDATA[Use own Cookie Message]]></phrase>
+    <phrase title="option_itm_cc_message_explain" version_id="100100" version_string="1.0.0"><![CDATA[If enabled, you can use your own message for the cookie consent banner. If not, the Xenforo default cookie phrase will be used. It is recommend for multi language forums.]]></phrase>
     <phrase title="option_itm_cc_palette" version_id="100100" version_string="1.0.0"><![CDATA[Cookie Consent Palette]]></phrase>
     <phrase title="option_itm_cc_palette_explain" version_id="100100" version_string="1.0.0"><![CDATA[Create your own color theme, for help take a look at the <a href="https://cookieconsent.insites.com/download/#colours" target="_target">setup wizard</a>.]]></phrase>
     <phrase title="option_itm_cc_policy_link" version_id="100100" version_string="1.0.0"><![CDATA[Cookie Consent Policy Link]]></phrase>
@@ -130,10 +150,7 @@ bottom-right={xen:phrase itm_cc_pos_float_right}</edit_format_params>
     <phrase title="option_itm_cc_position" version_id="100100" version_string="1.0.0"><![CDATA[Cookie Consent Position]]></phrase>
     <phrase title="option_itm_cc_position_explain" version_id="100100" version_string="1.0.0"><![CDATA[Choose the right position for your cookie consent banner. You can check out some <a href="https://cookieconsent.insites.com/demos/" target="_target">Demos</a>.]]></phrase>
     <phrase title="option_itm_cc_support" version_id="100100" version_string="1.0.0"><![CDATA[Show me your Support]]></phrase>
-    <phrase title="option_itm_cc_support_explain" version_id="100100" version_string="1.0.0"><![CDATA[You may also choose to support the author directly with a voluntary donation in USD or in EUR.
-<br /><br />
-<a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7AK7TCU5JS4TY"><img src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal." title="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal."></a>
-<a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7TKCNB59HAK48"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal - The safer, easier way to pay online!" title="PayPal - The safer, easier way to pay online!"></a>]]></phrase>
+    <phrase title="option_itm_cc_support_explain" version_id="100101" version_string="1.0.1"><![CDATA[You may also choose to support the author directly with a voluntary donation in USD or in EUR.]]></phrase>
   </phrases>
   <route_prefixes/>
   <style_properties/>
@@ -178,7 +195,7 @@ window.cookieconsent.initialise({
   	"static": true,
   </xen:if>
   "content": {
-    "message": "{$xenOptions.itm_cc_message}",
+    "message": <xen:if is="{$xenOptions.itm_cc_message.enabled}">"{$xenOptions.itm_cc_message.ccMessage}"<xen:else />"{xen:phrase this_site_uses_cookies_notice}"</xen:if>,
     "dismiss": "{$xenOptions.itm_cc_dismiss}",
     "link": "{$xenOptions.itm_cc_policy_text}",
     "href": "{$xenOptions.itm_cc_policy_link}"

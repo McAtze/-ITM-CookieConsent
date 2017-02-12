@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language title="Deutsch [Sie]" date_format="j. F Y" time_format="H:i" decimal_point="," thousands_separator="." language_code="de-DE" text_direction="LTR" addon_id="itm_cookie_consent">
+  <phrase title="itm_cc_layout_block" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Block]]></phrase>
+  <phrase title="itm_cc_layout_classic" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Classic]]></phrase>
+  <phrase title="itm_cc_layout_edgeless" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Edgeless]]></phrase>
+  <phrase title="itm_cc_layout_wire" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Wire]]></phrase>
+  <phrase title="itm_cc_palette_banner" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[# Banner]]></phrase>
+  <phrase title="itm_cc_palette_bannerText" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[# Banner Text]]></phrase>
+  <phrase title="itm_cc_palette_button" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[# Button]]></phrase>
+  <phrase title="itm_cc_palette_buttonText" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[# Button Text]]></phrase>
+  <phrase title="itm_cc_pos_bottom" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Banner unten anzeigen]]></phrase>
+  <phrase title="itm_cc_pos_float_left" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Banner als Floating links anzeigen]]></phrase>
+  <phrase title="itm_cc_pos_float_right" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Banner als Floating rechts anzeigen]]></phrase>
+  <phrase title="itm_cc_pos_top" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Banner oben anzeigen]]></phrase>
+  <phrase title="itm_cc_pos_top_pushdown" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Banner oben (mit eingerückter Seite) anzeigen]]></phrase>
+  <phrase title="option_group_itm_cookie_consent" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[[ITM] Cookie Consent by Insites]]></phrase>
+  <phrase title="option_group_itm_cookie_consent_description" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Mit Hilfe dieser Einstellungen können die Vorgaben für das [ITM] Cookie Consent AddOn festgelegt werden.]]></phrase>
+  <phrase title="option_itm_cc_active" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Cookie Consent Banner aktivieren]]></phrase>
+  <phrase title="option_itm_cc_active_explain" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Wenn aktiviert kann der Cookie Consent Banner, wie unten eingestellt, im Forum genutzt werden. In den Grundeinstellungen zum Forum sollte die Standard Information zu Cookies deaktiviert werden.]]></phrase>
+  <phrase title="option_itm_cc_dismiss" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Button zum Akzeptieren]]></phrase>
+  <phrase title="option_itm_cc_dismiss_explain" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Hier kann der Text zum Akzeptieren der Cookies eingegeben werden.]]></phrase>
+  <phrase title="option_itm_cc_layout" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Layout des Banners]]></phrase>
+  <phrase title="option_itm_cc_layout_explain" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Hier kann das Layout des Cookie Banners eingestellt werden. Zur Auswahl stehen folgende <a href="https://cookieconsent.insites.com/demos/" target="_target">Demos</a>.]]></phrase>
+  <phrase title="option_itm_cc_message" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Eine eigene Cookie Mitteilung eingeben]]></phrase>
+  <phrase title="option_itm_cc_message_explain" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Wenn aktiviert, kann eine eigene Mitteilung über die Nutzung von Cookies eingetragen werden. Falls nicht, wird die Standardinformation aus den Phrasen genutzt. Dies ist vor allem bei Multilingualen Foren hilfreich.]]></phrase>
+  <phrase title="option_itm_cc_palette" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Farbpalette des Banners]]></phrase>
+  <phrase title="option_itm_cc_palette_explain" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Hier kann ein individuelles Farbschema eingegeben werden, für weitere Anregungen sollte ein Blick in den <a href="https://cookieconsent.insites.com/download/#colours" target="_target">Setup Wizard</a> geworfen werden.]]></phrase>
+  <phrase title="option_itm_cc_policy_link" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Link zur Datenschutzerklärung]]></phrase>
+  <phrase title="option_itm_cc_policy_link_explain" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Hier sollte der Link zur eigenen Datenschutzerklärung bzw. weiteren Hinweisen über den Einsatz der Cookies stehen.]]></phrase>
+  <phrase title="option_itm_cc_policy_text" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Text zum Link]]></phrase>
+  <phrase title="option_itm_cc_policy_text_explain" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Hier kann der obige Link mit einem Text versehen werden, z.B. "Mehr dazu..", o.ä.]]></phrase>
+  <phrase title="option_itm_cc_position" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Position des Banners]]></phrase>
+  <phrase title="option_itm_cc_position_explain" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Hier kann die Position des Cookie Banners festgelegt werden. Zur Auswahl stehen folgende <a href="https://cookieconsent.insites.com/demos/" target="_target">Demos</a>.]]></phrase>
+  <phrase title="option_itm_cc_support" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[Ihnen gefällt meine Arbeit?]]></phrase>
+  <phrase title="option_itm_cc_support_explain" addon_id="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[]]></phrase>
+</language>
