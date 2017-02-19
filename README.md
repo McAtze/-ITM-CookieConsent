@@ -5,6 +5,14 @@ With this little add-on you be able to insert and adjust the ["Cookie Consent"] 
 
 If you wanna thank me for this add-on just [PayPal.Me] (https://www.paypal.me/itmaku) ..
 
+### Installation
+
+There is nothing to upload. Just install the addon.xml through the acp.
+
+#### Upgrade 1.0.1 => 1.0.2
+
+First uninstall the old version and then install the new one.
+
 ### Screenshots
 
 ![Options] (https://maxcdn.it-maku.com/git/cc/options.png)
