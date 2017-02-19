@@ -4,6 +4,18 @@
   <admin_permissions/>
   <admin_style_properties/>
   <admin_templates>
+    <template title="itm_cc_option_dismiss"><![CDATA[<xen:checkboxunit label="">
+	<xen:option name="{$fieldPrefix}[{$preparedOption.option_id}][enabled]" label="{$preparedOption.title}" selected="{$preparedOption.option_value.enabled}">
+		<xen:textbox name="{$fieldPrefix}[{$preparedOption.option_id}][ccDismiss]" value="{$preparedOption.option_value.ccDismiss}" inputclass="Elastic" />
+	</xen:option>
+	
+	<xen:explain>{xen:raw $preparedOption.explain}</xen:explain>
+	<xen:html>
+		<input type="hidden" name="{$listedFieldName}" value="{$preparedOption.option_id}" />
+		{xen:raw $editLink}
+	</xen:html>
+
+</xen:checkboxunit>]]></template>
     <template title="itm_cc_option_donate"><![CDATA[<xen:controlunit label="{$preparedOption.title}" hint="{$preparedOption.hint}">
 	<xen:explain>{xen:raw $preparedOption.explain}</xen:explain>
 	<xen:html>
@@ -37,10 +49,10 @@
 		{xen:raw $editLink}
 	</xen:html>
 </xen:controlunit>]]></template>
-    <template title="itm_cc_option_phrase"><![CDATA[<xen:checkboxunit label="">
+    <template title="itm_cc_option_policy"><![CDATA[<xen:checkboxunit label="">
 	<xen:option name="{$fieldPrefix}[{$preparedOption.option_id}][enabled]" label="{$preparedOption.title}" selected="{$preparedOption.option_value.enabled}">
-		<xen:textbox name="{$fieldPrefix}[{$preparedOption.option_id}][ccPhrase]" value="{$preparedOption.option_value.ccPhrase}" inputclass="Elastic" />
-	</xen:option>	
+		<xen:textbox name="{$fieldPrefix}[{$preparedOption.option_id}][ccPolicy]" value="{$preparedOption.option_value.ccPolicy}" inputclass="Elastic" />
+	</xen:option>
 	
 	<xen:explain>{xen:raw $preparedOption.explain}</xen:explain>
 	<xen:html>
@@ -66,9 +78,9 @@
     </option>
     <option option_id="itm_cc_dismiss" edit_format="template" data_type="array" can_backup="1">
       <default_value>a:0:{}</default_value>
-      <edit_format_params>itm_cc_option_phrase</edit_format_params>
+      <edit_format_params>itm_cc_option_dismiss</edit_format_params>
       <sub_options>enabled
-ccPhrase</sub_options>
+ccDismiss</sub_options>
       <relation group_id="itm_cookie_consent" display_order="120"/>
     </option>
     <option option_id="itm_cc_layout" edit_format="select" data_type="string" can_backup="1">
@@ -95,9 +107,9 @@ ccMessage</sub_options>
     </option>
     <option option_id="itm_cc_policy_text" edit_format="template" data_type="array" can_backup="1">
       <default_value>a:0:{}</default_value>
-      <edit_format_params>itm_cc_option_phrase</edit_format_params>
+      <edit_format_params>itm_cc_option_policy</edit_format_params>
       <sub_options>enabled
-ccPhrase</sub_options>
+ccPolicy</sub_options>
       <relation group_id="itm_cookie_consent" display_order="110"/>
     </option>
     <option option_id="itm_cc_position" edit_format="select" data_type="string" can_backup="1">
@@ -178,7 +190,7 @@ You can find more styling options within the <a href="admin.php?styles/default-s
     </group>
   </style_properties>
   <templates>
-    <template title="itm_cookie_consent" version_id="100101" version_string="1.0.1"><![CDATA[<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <template title="itm_cookie_consent" version_id="100102" version_string="1.0.2"><![CDATA[<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 <script>
 window.addEventListener("load", function(){
@@ -212,8 +224,8 @@ window.cookieconsent.initialise({
   </xen:if>
   "content": {
     "message": <xen:if is="{$xenOptions.itm_cc_message.enabled}">"{$xenOptions.itm_cc_message.ccMessage}"<xen:else />"{xen:phrase this_site_uses_cookies_notice}"</xen:if>,
-    "dismiss": <xen:if is="{$xenOptions.itm_cc_dismiss.enabled}">"{$xenOptions.itm_cc_dismiss.ccPhrase}"<xen:else />"{xen:phrase itm_cc_dismiss_button}"</xen:if>,
-    "link": <xen:if is="{$xenOptions.itm_cc_policy_text.enabled}">"{$xenOptions.itm_cc_policy_text.ccPhrase}"<xen:else />"{xen:phrase itm_cc_policy_linktext}"</xen:if>,
+    "dismiss": <xen:if is="{$xenOptions.itm_cc_dismiss.enabled}">"{$xenOptions.itm_cc_dismiss.ccDismiss}"<xen:else />"{xen:phrase itm_cc_dismiss_button}"</xen:if>,
+    "link": <xen:if is="{$xenOptions.itm_cc_policy_text.enabled}">"{$xenOptions.itm_cc_policy_text.ccPolicy}"<xen:else />"{xen:phrase itm_cc_policy_linktext}"</xen:if>,
     "href": "{$xenOptions.itm_cc_policy_link}"
   }
 })});
