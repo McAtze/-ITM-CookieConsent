@@ -1,4 +1,5 @@
 # -ITM- Cookie Consent
+[![StyleCI](https://styleci.io/repos/81040271/shield?branch=master)](https://styleci.io/repos/81040271)
 ### An Xenforo add-on for the Cookie Consent by Insites
 
 With this little add-on you be able to insert and adjust the [Cookie Consent](https://github.com/insites/cookieconsent/) by Insites into your Xenforo Forum. No more template edits or deletions after upgrade processes.
