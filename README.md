@@ -1,5 +1,8 @@
 # -ITM- Cookie Consent
 [![StyleCI](https://styleci.io/repos/81040271/shield?branch=master)](https://styleci.io/repos/81040271)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/McAtze/-ITM-CookieConsent.svg)](http://isitmaintained.com/project/McAtze/-ITM-CookieConsent "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/McAtze/-ITM-CookieConsent.svg)](http://isitmaintained.com/project/McAtze/-ITM-CookieConsent "Percentage of issues still open")
+
 ### An Xenforo add-on for the Cookie Consent by Insites
 
 With this little add-on you be able to insert and adjust the [Cookie Consent](https://github.com/insites/cookieconsent/) by Insites into your Xenforo Forum. No more template edits or deletions after upgrade processes.
