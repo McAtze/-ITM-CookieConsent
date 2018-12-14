@@ -19,18 +19,18 @@ First uninstall the old version and then install the new one.
 
 ### Screenshots
 
-![Options](https://maxcdn.it-maku.com/git/cc/options.png)
-![Style Properties](https://maxcdn.it-maku.com/git/cc/style_properties.png)
-![Top Classic](https://maxcdn.it-maku.com/git/cc/top_classic.png)
-![Top (Pushdown) Classic](https://maxcdn.it-maku.com/git/cc/top_pushdown_classic.png)
-![Bottom Classic](https://maxcdn.it-maku.com/git/cc/bottom_classic.png)
-![Bottom Edgeless](https://maxcdn.it-maku.com/git/cc/bottom_edgeless.png)
-![Bottom Wire](https://maxcdn.it-maku.com/git/cc/bottom_wire.png)
-![Floating Left Classic](https://maxcdn.it-maku.com/git/cc/floating_left_classic.png)
-![Floating Right Classic](https://maxcdn.it-maku.com/git/cc/floating_right_classic.png)
-![Floating Right Block](https://maxcdn.it-maku.com/git/cc/floating_right_block.png)
-![Floating Right Edgeless](https://maxcdn.it-maku.com/git/cc/floating_right_edgeless.png)
-![Floating Right Wire](https://maxcdn.it-maku.com/git/cc/floating_right_wire.png)
+![Options](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/options.png)
+![Style Properties](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/style_properties.png)
+![Top Classic](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/top_classic.png)
+![Top (Pushdown) Classic](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/top_pushdown_classic.png)
+![Bottom Classic](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/bottom_classic.png)
+![Bottom Edgeless](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/bottom_edgeless.png)
+![Bottom Wire](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/bottom_wire.png)
+![Floating Left Classic](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/floating_left_classic.png)
+![Floating Right Classic](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/floating_right_classic.png)
+![Floating Right Block](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/floating_right_block.png)
+![Floating Right Edgeless](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/floating_right_edgeless.png)
+![Floating Right Wire](https://github.com/McAtze/-ITM-CookieConsent/blob/master/Screenshots/floating_right_wire.png)
 
 ### Documentation 
 
